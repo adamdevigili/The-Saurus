@@ -1,1 +1,1 @@
-Paw is a full-featured HTTP client that lets you test the APIs you build or consume. It has a beautiful native OS X interface to compose requests, inspect server responses and generate client code out-of-the-box.
+TheSaurus is a Lightweight application that takes in a string of text, and replaces words above a certain length with the longest synonym found via API calls to pydictionary.

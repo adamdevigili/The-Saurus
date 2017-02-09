@@ -8,14 +8,15 @@ logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
 
 def TheSaurus():
     usedWords = []
-    filedata = None
+    inFile = None
+    outFile = None
     minWordLength = 5
 
     newString = ""
     with open('data.txt', 'r') as file:
-      filedata = file.read()
+      inFile = file.read()
 
-    for word in filedata.split():
+    for word in inFile.split():
         if len(word) >= minWordLength:
             newSyn = str(getLongestSyn(word, usedWords))
             if newSyn != "":            #If getLongestSyn finds a new synonym, append to new string. Otherwise, append the original word
@@ -27,7 +28,8 @@ def TheSaurus():
             newString += str(word)
         newString += " "
 
-    print newString
+    with open('example_output.txt', 'w') as outFile:
+        outFile.write(newString)
 
 def getLongestSyn(word, usedWords):
     api_url = "http://pydictionary-geekpradd.rhcloud.com/api/synonym/"
