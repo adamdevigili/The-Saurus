@@ -1,1 +1,1 @@
-Today I felt very excited to go the the supermarket. It was cold and I wish I could pedal my bicycle. 
+Paw is a full-featured HTTP client that lets you test the APIs you build or consume. It has a beautiful native OS X interface to compose requests, inspect server responses and generate client code out-of-the-box.
